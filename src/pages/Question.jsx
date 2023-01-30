@@ -11,6 +11,7 @@ import {
   Grid,
   Checkbox,
   FormControlLabel,
+  Button,
   Item,
   FormGroup,
 } from "@mui/material";
@@ -55,9 +56,23 @@ function Question() {
                 label="State"
                 onChange={handleChangeIndustry}
               >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
+                <MenuItem value={10}>Alabama</MenuItem>
+                <MenuItem value={20}>Alaska</MenuItem>
+                <MenuItem value={30}>Arizona</MenuItem>
+                <MenuItem value={30}>California</MenuItem>
+                <MenuItem value={30}>Colorado</MenuItem>
+                <MenuItem value={30}>Connecticut</MenuItem>
+                <MenuItem value={30}>Deleware</MenuItem>
+                <MenuItem value={30}>Floride</MenuItem>
+                <MenuItem value={30}>Georgia</MenuItem>
+                <MenuItem value={30}>Hawaii</MenuItem>
+                {/* Idaho IllinoisIndiana Iowa
+                Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan
+                Minnesota Mississippi Missouri MontanaNebraska Nevada New
+                Hampshire New Jersey New Mexico New York North Carolina North
+                Dakota Ohio Oklahoma Oregon PennsylvaniaRhode Island South
+                Carolina South Dakota Tennessee Texas Utah Vermont Virginia
+                Washington West Virginia Wisconsin Wyoming */}
               </Select>
             </FormControl>
           </Grid>
@@ -88,9 +103,18 @@ function Question() {
                 label="Industry"
                 onChange={handleChangeIndustry}
               >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
+                <MenuItem value={30}>Freight</MenuItem>
+                <MenuItem value={30}>Building Products</MenuItem>
+                <MenuItem value={30}>Energy</MenuItem>
+                <MenuItem value={10}>Trucking</MenuItem>
+                <MenuItem value={20}>Auto Parts</MenuItem>
+                <MenuItem value={10}>Home Appliances</MenuItem>
+                <MenuItem value={10}>Agricultures</MenuItem>
+                <MenuItem value={10}>Custom Manufacturing</MenuItem>
+                <MenuItem value={10}>Grocery</MenuItem>
+                <MenuItem value={10}>Appaarel</MenuItem>
+                <MenuItem value={10}>Investment Banking</MenuItem>
+                <MenuItem value={10}>Other</MenuItem>
               </Select>
             </FormControl>
           </Grid>
@@ -271,6 +295,9 @@ function Question() {
             />
           </Grid>
         </Grid>
+        <Button sx={{ marginTop: 3 }} variant="contained">
+          Submit
+        </Button>
       </div>
     </div>
   );
